@@ -6,15 +6,15 @@ namespace MEDIDAS
     {
         static void Main(string[] args)
         {
-            string  entrada ;
-            MEDIDAS centimetros , quilometros, metros ;
+            string entrada ;
+            double centimetros , quilometros, metros ;
 
            
             Console.WriteLine ( " Digite a medida em metros: " );
             entrada  =  Console.ReadLine ();
-            medidas  =  Convert.ToDouble ( entrada );
+            metros  =  Convert.ToDouble ( entrada );
             centimetros  =  metros  *  100 ;
-            quilometros  =  metros  /  100 ;
+            quilometros  =  metros  /  1000 ;
             
             Console. ForegroundColor = ConsoleColor.Cyan; 
             Console.WriteLine ( " \n Equivalência" );
